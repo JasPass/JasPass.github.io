@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "SchematicsComponentSBPro",
+    "title": "SBPro Component Schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "The name of the component.",
+            "type": "string"
+        },
+        "path": {
+            "type": "string",
+            "format": "path",
+            "description": "The path to create the component.",
+            "visible": false
+        },
+        "prefix": {
+            "type": "string",
+            "description": "The application prefix to use when creating the component."
+        },
+        "project": {
+            "type": "string",
+            "description": "The name of the project.",
+            "$default": {
+                "$source": "projectName"
+            }
+        }
+    },
+    "required": [
+        "name",
+        "path"
+    ]
+}
