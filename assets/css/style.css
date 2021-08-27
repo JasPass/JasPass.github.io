@@ -563,26 +563,32 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Why Us
+# Courses
 --------------------------------------------------------------*/
-.why-us {
-  padding-top: 10px;
+
+.course {
+  /* padding-top: 10px; */
 }
 
-.why-us .box {
+.course a {
+  color: #cc1616;
+  text-decoration: none;
+}
+
+.course .box {
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.3s;
 }
 
-.why-us .box span {
+.course .box span {
   display: block;
   font-size: 28px;
   font-weight: 700;
   color: #ed5b5b;
 }
 
-.why-us .box h4 {
+.course .box h4 {
   font-size: 24px;
   font-weight: 600;
   padding: 0;
@@ -590,20 +596,20 @@ section {
   color: #191919;
 }
 
-.why-us .box p {
+.course .box p {
   color: #aaaaaa;
   font-size: 15px;
   margin: 0;
   padding: 0;
 }
 
-.why-us .box:hover {
+.course .box:hover {
   background: #cc1616;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 
-.why-us .box:hover span, .why-us .box:hover h4, .why-us .box:hover p {
+.course .box:hover span, .course .box:hover h4, .course .box:hover p {
   color: #fff;
 }
 
