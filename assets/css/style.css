@@ -649,6 +649,7 @@ section {
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  color: #444444;
 }
 
 .services .icon-box .icon {
@@ -810,19 +811,17 @@ section {
   font-size: 18px;
   color: #fff;
   font-weight: 600;
-  /* color: #191919; */
   color: #1f1f1f; /* color of header in portfolio-info */
 }
 
 .portfolio .portfolio-item .portfolio-info p {
-  /* color: #4c4c4c; */
   color: #ffffff; /* color of text in portfolio-info */
   font-size: 14px;
   margin-bottom: 0;
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link, .portfolio .portfolio-item .portfolio-info .details-link {
-  position: absolute;
+  float: right;
   right: 40px;
   font-size: 24px;
   top: calc(50% - 18px);
@@ -831,7 +830,6 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
-  /* color: #cc1616; */
   color: #007aff; /* link button color on hover */
 }
 
