@@ -11,7 +11,8 @@ Authors:
 Christian Schioett - BCN852
 Rasmus Nielsen - JBZ701
 Thue Nikolajsen - QRD689
-Date Date 18/03 2016
+Date:
+18/03 2016
 """
 
 import numpy as np
@@ -26,17 +27,26 @@ from Double_Pendulum_Core import DoublePendulum
 # Initialize a DoublePendulum object with the measured
 # parameters from experiment (see report for details)
 
-pendulum1 = DoublePendulum(init_state=[np.pi / 4, np.pi / 4, 0, 0],
-                           m1=800e-3, m2=600e-3,
-                           R1=35.6e-2, R2=33.9e-2,
-                           L1=16.02e-2, L2=7.01e-2,
-                           P1=1.5068, P2=1.3951, g=9.82)
+pendulum = DoublePendulum(init_state=[np.pi / 4, np.pi / 4, 0, 0],
+                          m1=800e-3, m2=600e-3,
+                          R1=35.6e-2, R2=33.9e-2,
+                          L1=16.02e-2, L2=7.01e-2,
+                          P1=1.5068, P2=1.3951, g=9.82)
 
-# Set frame rate of the simulation to 30 fps
+# Set frame rate of the simulation [1 / s]
 fps = 100
 
-init_energy = pendulum1.energy()
+# The time step size for the simulation,
+# to integrate forward for each frame [s]
+time_step = 0.01
+
+# Initial energy of the pendulum
+init_energy = pendulum.energy()
+
+# List to store deviations from the initial energy
 energy_loss = []
+
+# List to store the time values at each simulation step
 time_values = []
 
 # ------------------------------------------------------------
@@ -97,20 +107,20 @@ frame_text = ax.text(0.02, 0.96, '', transform=ax.transAxes, color='Black')
 
 
 def init():
-    """initialize animation"""
+    """Initialize animation"""
     pendulum_energy.set_data([], [])
     frame_text.set_text('')
 
     return pendulum_energy, frame_text
 
 
-def animate(i):
-    """perform animation step"""
-    global pendulum1, fps, time_values, init_energy, energy_loss
+def animate(i, run=True):
+    """Perform animation step"""
+    global pendulum, time_step, time_values, init_energy, energy_loss
 
-    # Update the state of the double pendulum using the EOMS
-    # pendulum.update_forward_Euler(1 / fps)
-    pendulum.update_4_Runge_Kutta(1 / fps)
+    # Update the state of the double pendulum using the EOMs
+    # pendulum.update_forward_Euler(time_step * run)
+    pendulum.update_4_Runge_Kutta(time_step * run)
 
     # Update plot of the energy lost / gained over time
     time_values.append(pendulum.time_elapsed)
@@ -127,7 +137,7 @@ def animate(i):
 # Choose the interval between successive calls of FuncAnimation
 # based on the chosen fps and the time to animate one step
 t_start = time()
-animate(0)
+animate(0, run=False)
 t_end = time()
 
 # 1000 is conversion factor from seconds to milliseconds

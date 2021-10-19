@@ -11,7 +11,8 @@ Authors:
 Christian Schioett - BCN852
 Rasmus Nielsen - JBZ701
 Thue Nikolajsen - QRD689
-Date Date 18/03 2016
+Date:
+18/03 2016
 """
 
 import numpy as np
@@ -26,8 +27,8 @@ from Double_Pendulum_Core import DoublePendulum
 # Initialize a DoublePendulum object with the measured
 # parameters from experiment (see report for details)
 
-pendulum1 = DoublePendulum(init_state=[3 * np.pi / 4, 3 * np.pi / 4, 0, 0],
-                           origin=(0.25, -0.1))
+pendulum = DoublePendulum(init_state=[3 * np.pi / 4, 3 * np.pi / 4, 0, 0],
+                          origin=(0.25, -0.1))
 
 '''
 pendulum = DoublePendulum(init_state=[3 * np.pi / 4, 3 * np.pi / 4, 0, 0],
@@ -37,8 +38,12 @@ pendulum = DoublePendulum(init_state=[3 * np.pi / 4, 3 * np.pi / 4, 0, 0],
                           P1=1.5068, P2=1.3951, g=9.82)
 '''
 
-# Set frame rate of the simulation to 30 fps
+# Set frame rate of the simulation [1 / s]
 fps = 100
+
+# The time step size for the simulation,
+# to integrate forward for each frame [s]
+time_step = 0.01
 
 # ------------------------------------------------------------
 
@@ -91,7 +96,7 @@ energy_text = ax.text(0.02, 0.86, '', transform=ax.transAxes, color='White')
 
 
 def init():
-    """initialize animation"""
+    """Initialize animation"""
     pendulum_rods.set_data([], [])
     traced_path.set_data([], [])
     frame_text.set_text('')
@@ -101,12 +106,12 @@ def init():
     return pendulum_rods, traced_path, frame_text, time_text, energy_text
 
 
-def animate(i):
-    """perform animation step"""
-    global pendulum1, fps
+def animate(i, run=True):
+    """Perform animation step"""
+    global pendulum, time_step
 
-    # Update the state of the double pendulum using the EOMS
-    pendulum.update_4_Runge_Kutta(1 / fps)
+    # Update the state of the double pendulum using the EOMs
+    pendulum.update_4_Runge_Kutta(time_step * run)
 
     # Update plots of the pendulum rods and traced path
     pendulum_rods.set_data(*pendulum.position())
@@ -114,7 +119,7 @@ def animate(i):
 
     # Update the info-text for the simulation
     frame_text.set_text('Frame number = %i' % (i + 1))
-    time_text.set_text('Time elapsed = %.1f s' % pendulum.time_elapsed)
+    time_text.set_text('Time elapsed = %.2f s' % pendulum.time_elapsed)
     energy_text.set_text('Total energy = %.3f J' % pendulum.energy())
 
     return pendulum_rods, traced_path, time_text, frame_text, energy_text
@@ -123,7 +128,7 @@ def animate(i):
 # Choose the interval between successive calls of FuncAnimation
 # based on the chosen fps and the time to animate one step
 t_start = time()
-animate(0)
+animate(0, run=False)
 t_end = time()
 
 # 1000 is conversion factor from seconds to milliseconds

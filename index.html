@@ -29,6 +29,10 @@
   
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/f108ca0735.js" crossorigin="anonymous"></script>
+  
+  <!-- MathJax version 3 -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
   <!-- =======================================================
   * Template Name: Day - v4.3.0
@@ -68,46 +72,67 @@
 
       <nav id="navbar" class="navbar">
         <ul>
+        
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Interests</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Projects</a></li>
-          <li class="dropdown"><a href="#"><span>Archive</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html#services">Interests</a></li>
+          <li><a class="nav-link scrollto " href="index.html#portfolio">Projects</a></li>
+          <li class="dropdown"><a href="archive.html"><span>Archive</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+          
+            <li class="dropdown"><a href="Archive/physics.html"><span>Physics</span> <i class="bi bi-chevron-right"></i></a>
             <ul>
-              <li class="dropdown"><a href="#"><span>Physics</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Placeholder 1</a></li>
-                  <li><a href="#">Placeholder 2</a></li>
-                  <li><a href="#">Placeholder 3</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="#"><span>Mathematics</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Placeholder 1</a></li>
-                  <li><a href="#">Placeholder 2</a></li>
-                  <li><a href="#">Placeholder 3</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="#"><span>Computer Science</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Placeholder 1</a></li>
-                  <li><a href="#">Placeholder 2</a></li>
-                  <li><a href="#">Placeholder 3</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="#"><span>Documents</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="assets/docs/PhD/Research_Statement.pdf" target="_blank">Research Statement</a></li>
-                  <li><a href="assets/docs/PhD/Letter_of_Motivation_Murcia_U.pdf" target="_blank">Cover Letter: Murcia U</a></li>
-                  <li><a href="assets/docs/PhD/Letter_of_Motivation_IFAE.pdf" target="_blank">Cover Letter: IFAE, Barcelona</a></li>
-                  <li><a href="assets/docs/PhD/Letter_of_Motivation_Bielefeld_U.pdf" target="_blank">Cover Letter: Bielefeld U</a></li>
-                </ul>
-              </li>
+              
+              <li><a href="#">Classical Mechanics</a></li>
+              <li><a href="#">Quantum Mechanics</a></li>
+              <li><a href="#">Condensed Matter Theory</a></li>
+              <li><a href="#">Statistical Physics</a></li>
+              <li><a href="#">General Relativity</a></li>
+              <li><a href="#">Quantum Field Theory</a></li>
+              <li><a href="#">String Theory</a></li>
+              <li><a href="#">Fluid Dynamics</a></li>
+              
             </ul>
+            </li>
+            <li class="dropdown"><a href="Archive/mathematics.html"><span>Mathematics</span> <i class="bi bi-chevron-right"></i></a>
+            <ul>
+            
+              <li><a href="#">Linear Algebra</a></li>
+              <li><a href="#">Real Analysis</a></li>
+              <li><a href="#">Complex Function Theory</a></li>
+              <li><a href="#">Topology</a></li>
+              <li><a href="#">Differential Geometry</a></li>
+              <li><a href="#">Vector Analysis</a></li>
+              <li><a href="#">Differential Equations</a></li>
+              
+            </ul>
+            </li>
+            <li class="dropdown"><a href="Archive/computer_science.html"><span>Computer Science</span> <i class="bi bi-chevron-right"></i></a>
+            <ul>
+            
+              <li><a href="#">Placeholder 1</a></li>
+              <li><a href="#">Placeholder 2</a></li>
+              <li><a href="#">Placeholder 3</a></li>
+              
+            </ul>
+            </li>
+            <li class="dropdown"><a href="Archive/other_documents.html"><span>Other Documents</span> <i class="bi bi-chevron-right"></i></a>
+            <ul>
+            
+              <li><a href="#">Bachelor Project</a></li>
+              <li><a href="#">Master Project</a></li>
+              <li><a href="#">HF Matematik B</a></li>
+            
+            </ul>
+            </li>
+            
+          </ul>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contct</a></li>
+          
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
+        
       </nav><!-- .navbar -->
 
     </div>
@@ -129,9 +154,11 @@
       <div class="container">
 
         <div class="row">
+        
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
             <img src="assets/img/about.jpg" class="img-fluid" alt="">
           </div>
+          
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
             <h3> My name is Rasmus Steen Kofoed Nielsen, and
                  
@@ -175,11 +202,12 @@
               job. My <a class="scrollto" href="assets/docs/CV.pdf" target="_blank">CV can be found here</a>, and my <a class="scrollto" 
               href="assets/docs/Diploma_and_Grade_Transcripts.pdf" target="_blank">Diplomas here</a>. I look foward to hearing from you!
             </p>
-            
           </div>
+          
         </div>
 
       </div>
+      
     </section><!-- End About Section -->
 
     <!-- ======= Bachelor Courses Section ======= -->
@@ -207,7 +235,7 @@
                  Taylor's formula, 
                  Solving simple differential equations, 
                  Continuity of real functions of several variables, 
-                 Topology on Rn, 
+                 Topology on \( \mathbb{R}^n\), 
                  Differentiability of real functions of several variables, 
                  Extremum analysis for real functions of several variables, 
                  Lagrange's method,
@@ -237,20 +265,19 @@
               <span>03</span>
               <h4>Mechanics and Relativity Theory</h4>
               <p>
-                Impulse and energy conservation, 
-                Movement and acceleration, 
+                Momentum and energy conservation, 
+                Dynamics and acceleration, 
                 Newton's laws and work, 
                 Lagrange formalism, 
                 The Newtonian and the special principle of relativity, 
                 The Galilei transformation and the Lorentz transformation, 
-                Relativist kinematics including Lorentz shortening and time extension, 
+                Relativistic kinematics including Lorentz contraction and time dialation, 
                 Space time, 
-                Relativist mechanics, 
-                Moment of inertia, moment of impulse and moment of force, 
+                Relativistic mechanics, 
+                Moment of inertia, angular momentum and torque, 
                 Gravity, planetary motion and Kepler's laws, 
                 Periodic motion, harmonic oscillator and resonance, 
-                Newton's laws in accelerated coordinate systems, 
-                Periodic motion, harmonic oscillator and resonance.
+                Newton's laws in accelerated coordinate systems
               </p>
             </div>
             </a>
@@ -295,7 +322,7 @@
               <p>
                 The course builds on the compulsory mathematics content in the bachelor's program in the physical subjects and provides an introduction to the group theoretical methods used in modern theoretical physics.
 
-Key topics for the course are representation theory, tensors and Lie algebras. We work with finite groups as well as the Lie groups SO(N), SU(N), Sp(N) and their associated Lie algebras.
+Key topics for the course are representation theory, tensors and Lie algebras. We work with finite groups as well as the Lie groups \(SO(N)\), \(SU(N)\), \(Sp(N)\) and their associated Lie algebras.
               </p>
             </div>
             </a>
@@ -687,7 +714,7 @@ level...
         <div class="row">
         
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
-            <a href="#" target="_blank">
+            <a href="Archive/Physics/QFT.html">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-atom"></i></div>
               <h4>Quantum Field Theory</h4>
@@ -697,7 +724,7 @@ level...
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="150">
-            <a href="#" target="_blank">
+            <a href="Archive/Physics/GR.html">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-planet"></i></div>
               <h4>General Relativity</h4>
@@ -707,7 +734,7 @@ level...
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <a href="#" target="_blank">
+            <a href="Archive/Mathematics/DG.html">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-pyramid"></i></div>
               <h4>Differential Geometry</h4>
@@ -717,7 +744,7 @@ level...
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="450">
-            <a href="#" target="_blank">
+            <a href="Archive/Physics/QG.html">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-grid"></i></div>
               <h4>Quantum Gravity</h4>
@@ -727,7 +754,7 @@ level...
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="600">
-            <a href="#" target="_blank">
+            <a href="Archive/Physics/ST.html">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-dna"></i></div>
               <h4>String Theory</h4>
@@ -737,7 +764,7 @@ level...
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="750">
-            <a href="#" target="_blank">
+            <a href="Archive/Physics/ST/AdS_CFT.html">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-layer"></i></div>
               <h4>Holography and AdS/CFT</h4>
@@ -833,32 +860,32 @@ level...
               <p>
               Employing numerical simulations: 4th order Runge Kutta integration, to study the chaotic nature of the classical double pendulum system
               </p>
-              <a href="chaotic_pendulum.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="Archive/Physics/Classical_Mechanics/chaotic_pendulum.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               <a href="assets/img/portfolio/double_pendulum/double_pendulum.gif" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Chaotic Pendulums"><i class="bx bx-plus"></i></a>
               <i title="Status: Completed" style="padding-right: 5px" class="bi bi-check-circle details-link"></i>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-scrpt">
-            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/Mandelbrot_Set.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
+              <h4>Generation of the Mandelbrot set</h4>
+              <p>A script to generate the Mandelbrot set</p>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/Mandelbrot_Set.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Generation of the Mandelbrot set"><i class="bx bx-plus"></i></a>
               <i title="Status: Ongoing" style="padding-right: 5px" class="bi bi-circle details-link"></i>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-sim">
-            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/Wave_Function_Simulation.gif" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Wave function evolution</h4>
               <p>
               A program to simulate the 1-dimensional Schrödinger equation for various potenials
               </p>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Wave function evolution"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/Wave_Function_Simulation.gif" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Wave function evolution"><i class="bx bx-plus"></i></a>
               <i title="Status: Ongoing" style="padding-right: 5px" class="bi bi-circle details-link"></i>
             </div>
           </div>
@@ -877,38 +904,68 @@ level...
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-sim">
-            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/Many_Body_Simulation.gif" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Many-body gravitation</h4>
               <p>
               A simulation for the dynamics of the four inner planets in our solar system
               </p>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Many-body gravitation"><i class="bx bx-plus"></i></a>
+              <a href="Archive/Physics/Classical_Mechanics/orbital_simulation.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/portfolio/Many_Body_Simulation.gif" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Many-body gravitation"><i class="bx bx-plus"></i></a>
               <i title="Status: Ongoing" style="padding-right: 5px" class="bi bi-circle details-link"></i>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-note">
-            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/Geometric_Quantization.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Geometric quantization of gauge-theories</h4>
               <p>
               A research project, investigating the possibility of quantizing gauge-theories, without having to gauge-fix the path-integral
               </p>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/Geometric_Quantization.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
               <i title="Status: Ongoing" style="padding-right: 5px" class="bi bi-circle details-link"></i>
             </div>
           </div>
           
           <div class="col-lg-4 col-md-6 portfolio-item filter-scrpt">
-            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/Newtons_Method_and_Fractal.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
+              <h4>Newton's method and fractal</h4>
+              <p>
+              A script to implement Newtons's method for numerical equation solving,
+              and generation of the associated Newton's fractal for polynomials 
+              </p>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/Newtons_Method_and_Fractal.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Newton's method and fractal"><i class="bx bx-plus"></i></a>
+              <i title="Status: Ongoing" style="padding-right: 5px" class="bi bi-circle details-link"></i>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-sim">
+            <img src="assets/img/portfolio/Lattice_Spin_System.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Spin lattice simulations</h4>
+              <p>
+              A Monte Carlo based simulation of a lattice spin systems,
+              designed to compute various statistical properties of these systems
+              </p>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/portfolio/Lattice_Spin_System.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Spin lattice simulations"><i class="bx bx-plus"></i></a>
+              <i title="Status: Ongoing" style="padding-right: 5px" class="bi bi-circle details-link"></i>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-note">
+            <img src="assets/img/portfolio/QFT.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Notes on Quantum Field Theory</h4>
+              <p>
+              A set of notes, going through various aspects of Quantum Field Theory
+              </p>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="assets/img/portfolio/QFT.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Notes on Quantum Field Theory"><i class="bx bx-plus"></i></a>
               <i title="Status: Ongoing" style="padding-right: 5px" class="bi bi-circle details-link"></i>
             </div>
           </div>
@@ -930,11 +987,23 @@ level...
           <div class="col-lg-12 col-md-12" id="contact">
             <div class="footer-info">
               <h3>Contact Information</h3>
-              <p>
-                <strong>Mobile:</strong> +45 24664501<br>
-                <strong>1. Email:</strong> <a href="mailto:jbz701@alumni.ku.dk" target="_blank">jbz701@alumni.ku.dk</a><br>
-                <strong>2. Email:</strong> <a href="mailto:rasmusskn@gmail.com" target="_blank">rasmusskn@gmail.com</a><br>          
-              </p>
+              
+              <ul class="footer-info-list">
+              
+              	<li>
+                  <p><strong>Mobile:</strong> +45 24664501</p>
+                </li>
+                
+                <li>
+                   <p><strong>1. Email:</strong> <a href="mailto:jbz701@alumni.ku.dk" target="_blank">jbz701@alumni.ku.dk</a></p>
+                </li>
+                
+                <li>
+                   <p><strong>2. Email:</strong> <a href="mailto:rasmusskn@gmail.com" target="_blank">rasmusskn@gmail.com</a></p>
+                </li>        
+                
+              </ul>
+                
               <div class="social-links mt-3">
                 <a href="https://www.researchgate.net/profile/Rasmus-Nielsen-24" target="_blank" class="researchgate"><i class="fab fa-researchgate fa-lg"></i></i></a>
         <a href="https://www.linkedin.com/in/rasmus-nielsen-b7790b204/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></i></a>

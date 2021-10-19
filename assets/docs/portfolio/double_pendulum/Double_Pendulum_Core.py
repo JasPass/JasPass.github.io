@@ -11,7 +11,8 @@ Authors:
 Christian Schioett - BCN852
 Rasmus Nielsen - JBZ701
 Thue Nikolajsen - QRD689
-Date Date 18/03 2016
+Date:
+18/03 2016
 """
 
 from numpy import sin, cos
@@ -82,7 +83,7 @@ class DoublePendulum:
 
     def position(self):
         """
-        compute the current x,y coordinates of the pendulum arms:
+        Compute the current x,y coordinates of the pendulum arms:
         x, y = [coordinate for origin,
                 coordinate for tip of rod 1,
                 coordinate for tip of rod 2]
@@ -106,7 +107,7 @@ class DoublePendulum:
         return x, y
 
     def energy(self):
-        """compute the energy of the current state"""
+        """Compute the energy of the current state"""
         (alpha, beta, gamma, delta, epsilon) = self.consts
         s = self.state
 
@@ -128,8 +129,8 @@ class DoublePendulum:
 
         return T + U
 
-    def EOMS(self, s):
-        """compute time derivatives of state variables, based on the EOMS"""
+    def EOMs(self, s):
+        """Compute time derivatives of state variables, based on the EOMS"""
         (alpha, beta, gamma, delta, epsilon) = self.consts
 
         # Auxiliary quantity to easy readability (see report for details)
@@ -151,15 +152,15 @@ class DoublePendulum:
 
     def update_4_Runge_Kutta(self, dt):
         """
-        execute one time step of length dt and update state
-        Using the 4-th order Runge Kutta integration method
+        Execute one time step of length dt and update state,
+        using the 4-th order Runge Kutta integration method
         """
 
         # Start of 4. order Runge Kutta integration
-        a = self.EOMS(self.state)
-        b = self.EOMS(self.state + a * dt / 2)
-        c = self.EOMS(self.state + b * dt / 2)
-        d = self.EOMS(self.state + c * dt)
+        a = self.EOMs(self.state)
+        b = self.EOMs(self.state + a * dt / 2)
+        c = self.EOMs(self.state + b * dt / 2)
+        d = self.EOMs(self.state + c * dt)
 
         self.state = self.state + (a + 2 * b + 2 * c + d) * dt / 6
         # End of 4. order Runge Kutta integration
@@ -169,12 +170,12 @@ class DoublePendulum:
 
     def update_forward_Euler(self, dt):
         """
-        execute one time step of length dt and update state
-        Using the forward Euler integration method
+        Execute one time step of length dt and update state,
+        using the forward Euler integration method
         """
 
         # Start of forward Euler integration
-        a = self.EOMS(self.state)
+        a = self.EOMs(self.state)
 
         self.state = self.state + a * dt
         # End of forward Euler integration

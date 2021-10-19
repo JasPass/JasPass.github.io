@@ -12,7 +12,8 @@ Authors:
 Christian Schioett - BCN852
 Rasmus Nielsen - JBZ701
 Thue Nikolajsen - QRD689
-Date Date 18/03 2016
+Date:
+18/03 2016
 """
 
 import numpy as np
@@ -46,12 +47,20 @@ pendulum3 = DoublePendulum(init_state=[np.pi / 4 - off_set, np.pi / 4 - off_set,
                            L1=16.02e-2, L2=7.01e-2,
                            P1=1.5068, P2=1.3951, g=9.82)
 
-# Set frame rate of the simulation to 30 fps
+# Set frame rate of the simulation [1 / s]
 fps = 100
 
+# The time step size for the simulation,
+# to integrate forward for each frame [s]
+time_step = 0.01
+
+# Lists to store the angles of the upper pendulum
+# for each of the three pendulum simulations
 upper_angles1 = []
 upper_angles2 = []
 upper_angles3 = []
+
+# List to store the time values at each simulation step
 time_values = []
 
 # ------------------------------------------------------------
@@ -103,14 +112,16 @@ pendulum_angle3, = ax.plot([], [], 'g-', lw=1.0)
 
 # Add legend to the plot
 # plt.legend(['Energy loss - forward Euler'])
-plt.legend(['State #1', 'State #2', 'State #2'])
+plt.legend([r'State #1: $[\pi / 4, \pi / 4, 0, 0]$',
+            r'State #2: $[\pi / 4 + 10^{-3}, \pi / 4 + 10^{-3}, 0 + 10^{-3}, 0 + 10^{-3}]$',
+            r'State #3: $[\pi / 4 - 10^{-3}, \pi / 4 - 10^{-3}, 0 - 10^{-3}, 0 - 10^{-3}]$'])
 
 # Initialize info-text for the subplot (ax)
 frame_text = ax.text(0.02, 0.96, '', transform=ax.transAxes, color='Black')
 
 
 def init():
-    """initialize animation"""
+    """Initialize animation"""
     pendulum_angle1.set_data([], [])
     pendulum_angle2.set_data([], [])
     pendulum_angle3.set_data([], [])
@@ -119,18 +130,17 @@ def init():
     return pendulum_angle1, pendulum_angle2, pendulum_angle3, frame_text
 
 
-def animate(i):
-    """perform animation step"""
-    global pendulum1, pendulum_angle2, pendulum3, fps, time_values, upper_angles1, upper_angles2, upper_angles3
+def animate(i, run=True):
+    """Perform animation step"""
+    global pendulum1, pendulum_angle2, pendulum3, time_step, time_values, upper_angles1, upper_angles2, upper_angles3
 
-    # Update the states of the double pendulums using the EOMS
-    # pendulum.update_forward_Euler(1 / fps)
-    pendulum1.update_4_Runge_Kutta(1 / fps)
-    pendulum2.update_4_Runge_Kutta(1 / fps)
-    pendulum3.update_4_Runge_Kutta(1 / fps)
+    # Update the states of the double pendulums using the EOMs
+    pendulum1.update_4_Runge_Kutta(time_step * run)
+    pendulum2.update_4_Runge_Kutta(time_step * run)
+    pendulum3.update_4_Runge_Kutta(time_step * run)
 
     # Update plot of the upper pendulum angles
-    time_values.append((i + 1) / fps)
+    time_values.append((i + 1) * time_step * run)
     upper_angles1.append(pendulum1.state[0])
     upper_angles2.append(pendulum2.state[0])
     upper_angles3.append(pendulum3.state[0])
@@ -148,7 +158,7 @@ def animate(i):
 # Choose the interval between successive calls of FuncAnimation
 # based on the chosen fps and the time to animate one step
 t_start = time()
-animate(0)
+animate(0, run=False)
 t_end = time()
 
 # 1000 is conversion factor from seconds to milliseconds
