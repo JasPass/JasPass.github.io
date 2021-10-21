@@ -47,9 +47,9 @@ time_step = 0.01
 
 # ------------------------------------------------------------
 
-# Set up figure with size 32 cm x 26 cm
+# Set up figure with size 30 cm x 18 cm
 # (input units are inches. Conversion factor roughly 2.54)
-fig = plt.figure(figsize=(32 / 2.54, 26 / 2.54))
+fig = plt.figure(figsize=(30 / 2.54, 18 / 2.54))
 
 # Setup subplot with same scaling from data to plot x,y units
 ax = fig.add_subplot(111, aspect='equal', autoscale_on=False)
@@ -59,6 +59,9 @@ plt.ylim(-0.8, 0.4)             # Set the y_lim to left, right
 
 # Set font size, font weight and padding, for title text
 plt.title('Rendering of chaotic pendulums', {'size': 20, 'weight': 'bold'}, pad=15)
+
+# Set the bg-color of the figure to gray
+fig.set_facecolor('#efefef')
 
 # Sets the bg-color of the subplot to black
 ax.set_facecolor('black')

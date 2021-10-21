@@ -51,12 +51,15 @@ time_values = []
 
 # ------------------------------------------------------------
 
-# Set up figure with size 32 cm x 26 cm
+# Set up figure with size 30 cm x 18 cm
 # (input units are inches. Conversion factor roughly 2.54)
-fig = plt.figure(figsize=(32 / 2.54, 26 / 2.54))
+fig = plt.figure(figsize=(30 / 2.54, 18 / 2.54))
 
 # Setup subplot with same scaling from data to plot x,y units
 ax = fig.add_subplot(111, autoscale_on=True)
+
+# Set the bg-color of the figure to gray
+fig.set_facecolor('#efefef')
 
 # Set axis labels
 ax.set_xlabel('Time Elapsed [s]')
