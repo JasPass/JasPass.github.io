@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Chaotic Pendulum</title>
+  <title>Archive</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -31,6 +31,10 @@
   <script src="https://kit.fontawesome.com/f108ca0735.js" crossorigin="anonymous"></script>
   
   <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+  
+   <!-- jQuery include -->
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  
 
   <!-- =======================================================
   * Template Name: Day - v4.3.0
@@ -68,61 +72,8 @@
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <nav id="navbar" class="navbar">
-        <ul>
-        
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Interests</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Projects</a></li>
-          <li class="dropdown"><a href="#"><span>Archive</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-          
-            <li class="dropdown"><a href="#"><span>Physics</span> <i class="bi bi-chevron-right"></i></a>
-            <ul>
-              
-              <li><a href="#">Placeholder 1</a></li>
-              <li><a href="#">Placeholder 2</a></li>
-              <li><a href="#">Placeholder 3</a></li>
-              
-            </ul>
-            </li>
-            <li class="dropdown"><a href="#"><span>Mathematics</span> <i class="bi bi-chevron-right"></i></a>
-            <ul>
-            
-              <li><a href="#">Placeholder 1</a></li>
-              <li><a href="#">Placeholder 2</a></li>
-              <li><a href="#">Placeholder 3</a></li>
-              
-            </ul>
-            </li>
-            <li class="dropdown"><a href="#"><span>Computer Science</span> <i class="bi bi-chevron-right"></i></a>
-            <ul>
-            
-              <li><a href="#">Placeholder 1</a></li>
-              <li><a href="#">Placeholder 2</a></li>
-              <li><a href="#">Placeholder 3</a></li>
-              
-            </ul>
-            </li>
-            <li class="dropdown"><a href="#"><span>Documents</span> <i class="bi bi-chevron-right"></i></a>
-            <ul>
-            
-              <li><a href="#">Placeholder 1</a></li>
-              <li><a href="#">Placeholder 2</a></li>
-              <li><a href="#">Placeholder 3</a></li>
-            
-            </ul>
-            </li>
-            
-          </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contct</a></li>
-          
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-        
-      </nav><!-- .navbar -->
+      <!-- Navbar include -->
+      <div id="includedContent"></div>
 
     </div>
   </header><!-- End Header -->
@@ -135,9 +86,9 @@
 
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Chaotic Pendulum</li>
+          <li>Archive</li>
         </ol>
-        <h2>Chaotic Pendulum</h2>
+        <h2>Archive</h2>
 
       </div>
     </section><!-- End Breadcrumbs -->
@@ -145,87 +96,8 @@
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper-container">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/double_pendulum/RenderPlot.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/double_pendulum/RungeKuttaPlot.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/double_pendulum/kaosplot.png" alt="">
-                </div>
-                
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/double_pendulum/upper.png" alt="">
-                </div>
-                
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/double_pendulum/lower.png" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Simulation</li>
-                <li><strong>Language</strong>: Python</li>
-                <li><strong>Field</strong>: Dynamical systems</li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>A classical example of chaos</h2>
-              <p>
-              In this project a chaotic double pendulum system is analysed. First, the equations of
-motion for the system is found and numerically integrated to conclude chaotic behaviour.
-An experiment is then conducted, finding that the lab system exhibited chaotic behaviour.
-Furthermore, a linear model for small oscillations of the system is developed, and
-theoretical values for the eigenmode frequencies produced. An experiment is then
-conducted to find these frequencies. The experiment and the theory agreed on the
-mean-valued frequencies 0.86 Hz and 0.65 Hz.
-              </p>
-            </div>
-            <div class="portfolio-info">
-              <h3>Project files</h3>
-              <ul>
-                <li>
-                  <span class="iconify" data-icon="ant-design:file-pdf-filled"></span>
-                  <a href="assets/docs/portfolio/double_pendulum/Report.pdf" target="_blank">Report.pdf</a>
-                </li>
-                <li>
-                  <span class="iconify" data-icon="ant-design:file-text-filled"></span>
-                  <a href="assets/docs/portfolio/double_pendulum/Double_Pendulum_Render.py" target="_blank">Double_Pendulum_Render.py</a>
-                </li>
-                <li>
-                  <span class="iconify" data-icon="ant-design:file-text-filled"></span>
-                  <a href="assets/docs/portfolio/double_pendulum/Double_Pendulum_Energy_Loss.py" target="_blank">Double_Pendulum_Energy_Loss.py</a>
-                </li>
-                <li>
-                  <span class="iconify" data-icon="ant-design:file-text-filled"></span>
-                  <a href="assets/docs/portfolio/double_pendulum/Double_Pendulum_Chaos.py" target="_blank">Double_Pendulum_Chaos.py</a>
-                </li>
-                <li>
-                  <span class="iconify" data-icon="ant-design:file-text-filled"></span>
-                  <a href="assets/docs/portfolio/double_pendulum/Double_Pendulum_Core.py" target="_blank">Double_Pendulum_Core.py</a>             
-                </li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
+      
+        
 
       </div>
     </section><!-- End Portfolio Details Section -->
@@ -300,6 +172,11 @@ mean-valued frequencies 0.86 Hz and 0.65 Hz.
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  
+  <!-- Navbar include -->
+  <script> 
+    $("#includedContent").load("../../nav_layer_0.html");
+  </script> 
 
 </body>
 
