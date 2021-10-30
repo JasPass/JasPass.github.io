@@ -68,70 +68,11 @@
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <nav id="navbar" class="navbar">
-        <ul>
-        
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="../../../index.html#about">About</a></li>
-          <li><a class="nav-link scrollto" href="../../../index.html#services">Interests</a></li>
-          <li><a class="nav-link scrollto " href="../../../index.html#portfolio">Projects</a></li>
-          <li class="dropdown"><a href="../../../archive.html"><span>Archive</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-          
-            <li class="dropdown"><a href="../../../Archive/physics.html"><span>Physics</span> <i class="bi bi-chevron-right"></i></a>
-            <ul>
-              
-              <li><a href="#">Classical Mechanics</a></li>
-              <li><a href="#">Quantum Mechanics</a></li>
-              <li><a href="#">Condensed Matter Theory</a></li>
-              <li><a href="#">Statistical Physics</a></li>
-              <li><a href="#">General Relativity</a></li>
-              <li><a href="#">Quantum Field Theory</a></li>
-              <li><a href="#">String Theory</a></li>
-              <li><a href="#">Fluid Dynamics</a></li>
-              
-            </ul>
-            </li>
-            <li class="dropdown"><a href="../../Archive/mathematics.html"><span>Mathematics</span> <i class="bi bi-chevron-right"></i></a>
-            <ul>
-            
-              <li><a href="#">Linear Algebra</a></li>
-              <li><a href="#">Real Analysis</a></li>
-              <li><a href="#">Complex Function Theory</a></li>
-              <li><a href="#">Topology</a></li>
-              <li><a href="#">Differential Geometry</a></li>
-              <li><a href="#">Vector Analysis</a></li>
-              <li><a href="#">Differential Equations</a></li>
-              
-            </ul>
-            </li>
-            <li class="dropdown"><a href="../../../Archive/computer_science.html"><span>Computer Science</span> <i class="bi bi-chevron-right"></i></a>
-            <ul>
-            
-              <li><a href="#">Placeholder 1</a></li>
-              <li><a href="#">Placeholder 2</a></li>
-              <li><a href="#">Placeholder 3</a></li>
-              
-            </ul>
-            </li>
-            <li class="dropdown"><a href="../../../Archive/other_documents.html"><span>Other Documents</span> <i class="bi bi-chevron-right"></i></a>
-            <ul>
-            
-              <li><a href="#">Bachelor Project</a></li>
-              <li><a href="#">Master Project</a></li>
-              <li><a href="#">HF Matematik B</a></li>
-            
-            </ul>
-            </li>
-            
-          </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contct</a></li>
-          
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-        
-      </nav><!-- .navbar -->
+      <!-- Navbar include -->
+      
+      <div id="includeNavbar"></div>
+      
+      <!-- Navbar include -->
 
     </div>
   </header><!-- End Header -->
@@ -144,6 +85,7 @@
 
         <ol>
           <li><a href="../../../index.html">Home</a></li>
+          <li><a href="../../../archive.html">Archive</a></li>
           <li><a href="../../../Archive/physics.html">Physics</a></li>
           <li><a href="../../../Archive/Physics/ST.html">String Theory</a></li>
           <li>The AdS/CFT Correspondence</li>
@@ -232,6 +174,27 @@
 
   <!-- Template Main JS File -->
   <script src="../../../assets/js/main.js"></script>
+  
+  <!-- jQuery include -->
+  <script src="../../../assets/vendor/jquery/jquery.js"></script>
+  
+  <!-- Navbar include -->
+  <script>
+      
+    $('#includeNavbar').load("../../../navbar.html", function(){
+      
+      $('.modify').each(function() {
+      
+        var href = $(this).attr('href');
+        
+        $(this).attr('href', '../../../' + href);
+      
+      });
+    
+    });
+    
+  </script>
+  <!-- Navbar include -->
 
 </body>
 

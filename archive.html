@@ -31,10 +31,6 @@
   <script src="https://kit.fontawesome.com/f108ca0735.js" crossorigin="anonymous"></script>
   
   <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-  
-   <!-- jQuery include -->
-  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-  
 
   <!-- =======================================================
   * Template Name: Day - v4.3.0
@@ -73,7 +69,10 @@
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <!-- Navbar include -->
-      <div id="includedContent"></div>
+      
+      <div id="includeNavbar"></div>
+      
+      <!-- Navbar include -->
 
     </div>
   </header><!-- End Header -->
@@ -173,10 +172,16 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   
+  <!-- jQuery include -->
+  <script src="assets/vendor/jquery/jquery.js"></script>
+  
   <!-- Navbar include -->
-  <script> 
-    $("#includedContent").load("../../nav_layer_0.html");
-  </script> 
+  <script>
+      
+    $("#includeNavbar").load("navbar.html");
+    
+  </script>
+  <!-- Navbar include -->
 
 </body>
 
