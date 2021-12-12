@@ -607,15 +607,20 @@ section {
   padding: 0;
 }
 
+.course .box hr {
+  color: #aaaaaa;
+}
+
 .course .box:hover {
   background: #cc1616;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 
-.course .box:hover span, .course .box:hover h4, .course .box:hover p {
+.course .box:hover span, .course .box:hover h4, .course .box:hover p, .course .box:hover hr {
   color: #fff;
 }
+
 
 /*--------------------------------------------------------------
 # Clients
