@@ -4,9 +4,12 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
 (function() {
   "use strict";
-
+  
+  console.log('Main.js loaded!')
+  
   /**
    * Easy selector helper function
    */
@@ -118,21 +121,55 @@
    * Mobile nav toggle
    */
   on('click', '.mobile-nav-toggle', function(e) {
+  
+    console.log('Mobile nav-bar working!')
+    
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
+    
+    var subs = document.getElementsByClassName("unfold");
+        
+        for (var i = 0; i < subs.length; i++) {
+          
+          subs.item(i).parentElement.nextElementSibling.classList.remove('dropdown-active')
+          
+        }
+    
   })
-
+  
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '.navbar .dropdown > div > a.unfold', function(e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
-      this.nextElementSibling.classList.toggle('dropdown-active')
+      
+      if (this.classList.contains("sub-unfold")) {
+        
+        this.parentElement.nextElementSibling.classList.toggle('dropdown-active')
+        
+        var subs = document.getElementsByClassName("sub-unfold");
+        
+        for (var i = 0; i < subs.length; i++) {
+          
+          if (subs.item(i) != this) {
+          
+            subs.item(i).parentElement.nextElementSibling.classList.remove('dropdown-active')
+          
+          }
+          
+        }
+        
+      } else {
+        
+        this.parentElement.nextElementSibling.classList.toggle('dropdown-active')
+        
+      }
+      
     }
   }, true)
-
+  
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
@@ -169,6 +206,7 @@
   if (preloader) {
     window.addEventListener('load', () => {
       preloader.remove()
+      console.log('Preloader removed!')
     });
   }
 
