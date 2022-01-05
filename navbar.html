@@ -4,17 +4,42 @@
 <body>
   
   <nav id="navbar" class="navbar">
-  
     <ul>
         
       <li><a class="modify nav-link scrollto" href="index.html#hero">Home</a></li>
       <li><a class="modify nav-link scrollto" href="index.html#about">About</a></li>
       <li><a class="modify nav-link scrollto" href="index.html#services">Interests</a></li>
       <li><a class="modify nav-link scrollto" href="index.html#portfolio">Projects</a></li>
-      <li class="dropdown"><a class="modify active" href="archive.html"><span>Archive</span> <i class="bi bi-chevron-down"></i></a>
+      <li class="dropdown active" style="display: flex; flex-direction: column;">
+          
+      <div style="display: flex; justify-content: space-between;">
+          
+      <a class="modify active" href="archive.html" style="padding-right: 5px;">
+        <span>Archive</span>
+      </a>
+            
+      <a href="#" class="unfold" style="padding-left: 5px;">
+        <i class="bi bi-chevron-down"></i>
+      </a>
+          
+      </div>
+      
       <ul>
           
-        <li class="dropdown"><a class="modify" href="Archive/physics.html"><span>Physics</span> <i class="bi bi-chevron-right"></i></a>
+        <li class="dropdown" style="display: flex; flex-direction: column;">
+            
+        <div style="display: flex; justify-content: space-between;">
+            
+        <a class="modify" href="Archive/physics.html" style="padding-right: 5px;">
+          <span>Physics</span>
+        </a>
+            
+        <a href="#" class="unfold sub-unfold" style="padding-left: 5px;">
+          <i class="bi bi-chevron-right"></i>
+        </a>
+            
+        </div>
+        
         <ul>
               
           <li><a class="modify" href="Archive/Physics/CM.html">Classical Mechanics</a></li>
@@ -28,7 +53,21 @@
               
         </ul>
         </li>
-        <li class="dropdown"><a class="modify" href="Archive/mathematics.html"><span>Mathematics</span> <i class="bi bi-chevron-right"></i></a>
+            
+        <li class="dropdown" style="display: flex; flex-direction: column;">
+            
+        <div style="display: flex; justify-content: space-between;">
+           
+        <a class="modify" href="Archive/mathematics.html" style="padding-right: 5px;">
+          <span>Mathematics</span>
+        </a>
+            
+        <a href="#" class="unfold sub-unfold" style="padding-left: 5px;">
+          <i class="bi bi-chevron-right"></i>
+        </a>
+            
+        </div>
+        
         <ul>
             
           <li><a class="modify" href="Archive/Mathematics/LA.html">Linear Algebra</a></li>
@@ -43,7 +82,21 @@
               
         </ul>
         </li>
-        <li class="dropdown"><a class="modify" href="Archive/computer_science.html"><span>Computer Science</span> <i class="bi bi-chevron-right"></i></a>
+            
+        <li class="dropdown" style="display: flex; flex-direction: column;">
+            
+        <div style="display: flex; justify-content: space-between;">
+            
+        <a class="modify" href="Archive/computer_science.html" style="padding-right: 5px;">
+          <span>Computer Science</span>
+        </a>
+            
+        <a href="#" class="unfold sub-unfold" style="padding-left: 5px;">
+          <i class="bi bi-chevron-right"></i>
+        </a>
+            
+        </div>
+            
         <ul>
             
           <li><a class="modify" href="Archive/Computer_Science/NN.html">Neural Networks</a></li>
@@ -52,7 +105,21 @@
               
         </ul>
         </li>
-        <li class="dropdown"><a class="modify" href="Archive/other_documents.html"><span>Other Documents</span> <i class="bi bi-chevron-right"></i></a>
+            
+        <li class="dropdown" style="display: flex; flex-direction: column;">
+            
+        <div style="display: flex; justify-content: space-between;">
+            
+        <a class="modify" href="Archive/other_documents.html" style="padding-right: 5px;">
+          <span>Other Documents</span>
+        </a>
+            
+        <a href="#" class="unfold sub-unfold" style="padding-left: 5px;">
+          <i class="bi bi-chevron-right"></i>
+        </a>
+           
+        </div>
+        
         <ul>
             
           <li><a class="modify" href="Archive/Other_Documents/BP.html">Bachelor Project</a></li>
@@ -69,10 +136,10 @@
     </ul>
     <i class="bi bi-list mobile-nav-toggle"></i>
     
-  </nav>
+    <!-- Template Main JS File -->
+    <script class="modify" src="assets/js/main.js"></script>
     
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  </nav>
 
 </body>
 

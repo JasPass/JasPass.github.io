@@ -225,20 +225,21 @@
   <!-- Navbar include -->
   <script>
       
-    $("#includeNavbar").load("navbar.html", function(data) {
+    $("#includeNavbar").load("navbar.html #navbar", function(data) {
+      
       var scripts = $(data).find("script");
-
+      
       if (scripts.length) {
-          $(scripts).each(function() {
-              if ($(this).attr("src")) {
-                  $.getScript($(this).attr("src"));
-              }
-              else {
-                  eval($(this).html());
-              }
-          });
+      
+        $(scripts).each(function() {
+          if ($(this).attr("src")) {
+                  
+            $.getScript($(this).attr("src"));
+              
+          }
+        });
       }
-
+    
     });
     
   </script>
