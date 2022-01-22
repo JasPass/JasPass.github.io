@@ -77,140 +77,7 @@
 
       <!-- Navbar include -->
       
-      <nav id="navbar" class="navbar">
-        <ul>
-        
-          <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-          <li><a class="nav-link scrollto" href="index.html#services">Interests</a></li>
-          <li><a class="nav-link scrollto" href="index.html#portfolio">Projects</a></li>
-          <li class="dropdown" style="display: flex; flex-direction: column;">
-          
-          <div style="display: flex; justify-content: space-between;">
-          
-          <a href="archive.html" style="padding-right: 5px;">
-            <span>Archive</span>
-          </a>
-            
-          <a href="#" class="unfold" style="padding-left: 5px;">
-            <i class="bi bi-chevron-down"></i>
-          </a>
-          
-          </div>
-          
-          <ul>
-          
-            <li class="dropdown" style="display: flex; flex-direction: column;">
-            
-            <div style="display: flex; justify-content: space-between;">
-            
-            <a href="Archive/physics.html" style="padding-right: 5px;">
-              <span>Physics</span>
-            </a>
-            
-            <a href="#" class="unfold sub-unfold" style="padding-left: 5px;">
-              <i class="bi bi-chevron-right"></i>
-            </a>
-            
-            </div>
-            
-            <ul>
-              
-              <li><a href="Archive/Physics/CM.html">Classical Mechanics</a></li>
-              <li><a href="Archive/Physics/QM.html">Quantum Mechanics</a></li>
-              <li><a href="Archive/Physics/CMT.html">Condensed Matter Theory</a></li>
-              <li><a href="Archive/Physics/SP.html">Statistical Physics</a></li>
-              <li><a href="Archive/Physics/GR.html">General Relativity</a></li>
-              <li><a href="Archive/Physics/QFT.html">Quantum Field Theory</a></li>
-              <li><a href="Archive/Physics/ST.html">String Theory</a></li>
-              <li><a href="Archive/Physics/FD.html">Fluid Dynamics</a></li>
-              
-            </ul>
-            </li>
-            
-            <li class="dropdown" style="display: flex; flex-direction: column;">
-            
-            <div style="display: flex; justify-content: space-between;">
-            
-            <a href="Archive/mathematics.html" style="padding-right: 5px;">
-              <span>Mathematics</span>
-            </a>
-            
-            <a href="#" class="unfold sub-unfold" style="padding-left: 5px;">
-              <i class="bi bi-chevron-right"></i>
-            </a>
-            
-            </div>
-            
-            <ul>
-            
-              <li><a href="Archive/Mathematics/LA.html">Linear Algebra</a></li>
-              <li><a href="Archive/Mathematics/RA.html">Real Analysis</a></li>
-              <li><a href="Archive/Mathematics/CFT.html">Complex Function Theory</a></li>
-              <li><a href="Archive/Mathematics/TOP.html">Topology</a></li>
-              <li><a href="Archive/Mathematics/DG.html">Differential Geometry</a></li>
-              <li><a href="Archive/Mathematics/VA.html">Vector Analysis</a></li>
-              <li><a href="Archive/Mathematics/DE.html">Differential Equations</a></li>
-              <li><a href="Archive/Mathematics/GT.html">Group Theory</a></li>
-              <li><a href="Archive/Mathematics/COV.html">Calculus of Variations</a></li>
-              
-            </ul>
-            </li>
-            
-            <li class="dropdown" style="display: flex; flex-direction: column;">
-            
-            <div style="display: flex; justify-content: space-between;">
-            
-            <a href="Archive/computer_science.html" style="padding-right: 5px;">
-              <span>Computer Science</span>
-            </a>
-            
-            <a href="#" class="unfold sub-unfold" style="padding-left: 5px;">
-              <i class="bi bi-chevron-right"></i>
-            </a>
-            
-            </div>
-            
-            <ul>
-            
-              <li><a href="Archive/Computer_Science/NN.html">Neural Networks</a></li>
-              <li><a href="Archive/Computer_Science/CRYP.html">Cryptography</a></li>
-              <li><a href="Archive/Computer_Science/ECC.html">Error Correction Code</a></li>
-              
-            </ul>
-            </li>
-            
-            <li class="dropdown" style="display: flex; flex-direction: column;">
-            
-            <div style="display: flex; justify-content: space-between;">
-            
-            <a href="Archive/other_documents.html" style="padding-right: 5px;">
-              <span>Other Documents</span>
-            </a>
-            
-            <a href="#" class="unfold sub-unfold" style="padding-left: 5px;">
-              <i class="bi bi-chevron-right"></i>
-            </a>
-            
-            </div>
-            
-            <ul>
-            
-              <li><a href="Archive/Other_Documents/BP.html">Bachelor Project</a></li>
-              <li><a href="Archive/Other_Documents/MP.html">Master Project</a></li>
-              <li><a href="Archive/Other_Documents/HF_MAT_B.html">HF Matematik B</a></li>
-            
-            </ul>
-            </li>
-            
-          </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contct</a></li>
-          
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-        
-      </nav>
+      <div id="includeNavbar"></div>
       
       <!-- Navbar include -->
 
@@ -220,16 +87,19 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
-      <h1>Welcome to my personal website and blog</h1>
-      <h2>Here you can find information about my educational background, scientific notes and projects</h2>
+      <h1>Welcome to my personal website!</h1>
+      <h2>Here you can find information about my background, scientific notes and projects</h2>
       <a href="#about" class="btn-get-started scrollto">How am I?</a>
     </div>
   </section><!-- End Hero -->
 
   <main id="main">
-
+    
+    <!-- ======= About div ======= --> 
+    <div id="about">
+    
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section class="about">
       <div class="container">
 
         <div class="row">
@@ -295,7 +165,7 @@
     <section id="course-bachelor" class="course">
       <div class="container">
 	
-	<div class="section-title">
+	    <div class="section-title">
           <span>Bachelor courses</span>
           <h2>Bachelor courses</h2>
           <p>Below, you will find a comprehensive list of all my completed bachelor courses</p>
@@ -783,8 +653,14 @@ level...
       </div>
     </section><!-- End Master Courses Section -->
 
+    </div>
+    <!-- End about div -->    
+    
+    <!-- ======= Interests div ======= --> 
+    <div id="services">
+    
     <!-- ======= Interests Section ======= -->
-    <section id="services" class="services">
+    <section class="services">
       <div class="container">
       
         <div class="section-title">
@@ -866,12 +742,15 @@ level...
 
         <div class="text-center">
           <h3>My Github Project Repository</h3>
-          <p> At my project repository, you can find a collection of various programs and scripts, pertaining to previous and ongoing projects of mine.</p>
+          <p>View a collection of various programs and scripts, pertaining to previous and ongoing projects.</p>
           <a class="cta-btn" target="_blank" href="https://github.com/JasPass/Projects">Visit the repository</a>
         </div>
 
       </div>
     </section><!-- End Cta Section -->
+    
+    </div>
+    <!-- End about div -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -1062,11 +941,11 @@ level...
   <!-- ======= Footer ======= -->
   <footer id="footer">
   
-    <div class="footer-top">
+    <div id="contact" class="footer-top">
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-12 col-md-12" id="contact">
+          <div class="col-lg-12 col-md-12">
             <div class="footer-info">
               <h3>Contact Information</h3>
               
@@ -1152,7 +1031,33 @@ level...
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
+  
+  <!-- jQuery include -->
+  <script src="assets/vendor/jquery/jquery.js"></script>
+  
+  <!-- Navbar include -->
+  <script>
+      
+    $("#includeNavbar").load("navbar.html #navbar", function(data) {
+      
+      var scripts = $(data).find("script");
+      
+      if (scripts.length) {
+      
+        $(scripts).each(function() {
+          if ($(this).attr("src")) {
+                  
+            $.getScript($(this).attr("src"));
+              
+          }
+        });
+      }
+    
+    });
+    
+  </script>
+  <!-- Navbar include -->
+  
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 

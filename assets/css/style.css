@@ -219,17 +219,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 
-.navbar a, .navbar a:focus {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 25px 15px 24px 15px;
-  font-size: 14px;
-  color: #fff; /* navbar link color */
-  white-space: nowrap;
-  transition: 0.3s;
-}
-
 .navbar a i, .navbar a:focus i {
   font-size: 12px;
   line-height: 0;
@@ -241,13 +230,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 */
 
-.navbar li:hover, .navbar .active, .navbar .active:focus {
-  background: #cc1616;
+@media (min-width: 991px) {
+  .navbar li:hover > div > a {
+    color: #0066ff; /* hover navbar link color */
+  }
+    .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+    color: #0088ff; /* hover link color of dropdown menus */
+  }
+  .navbar a, .navbar a:focus {
+    color: #fff; /* navbar link color */
+  }
+    .navbar li:hover, .navbar .active, .navbar .active:focus {
+    background: #cc1616;
+  }
 }
 
-.navbar li:hover > div > a {
-  color: #0066ff; /* hover navbar link color */
-}
+.navbar a, .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 15px 24px 15px;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
 
 .navbar .dropdown ul {
   display: block;
@@ -275,10 +281,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar .dropdown ul a i {
   font-size: 12px;
-}
-
-.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #0088ff; /* hover link color of dropdown menus */
 }
 
 .navbar .dropdown:hover > ul {
@@ -333,6 +335,9 @@ h1, h2, h3, h4, h5, h6 {
   .navbar ul {
     display: none;
   }
+  .navbar a:focus {
+    padding: 10px 20px;
+  }
 }
 
 .navbar-mobile {
@@ -376,8 +381,19 @@ h1, h2, h3, h4, h5, h6 {
   background: none;
 }
 
+/*
 .navbar-mobile div > a:hover, .navbar-mobile .active, .navbar-mobile li:hover > div > a {
-  color: #cc1616; /* color of menu elements at top level */
+  color: #cc1616; ( color of menu elements at top level )
+  padding: 10px 20px;
+}
+*/
+
+.navbar-mobile div > a.link.active, .navbar-mobile li > div > a.link-active {
+  color: #0066ff; /* color of menu elements at top level */
+}
+
+.navbar-mobile .active, .navbar-mobile li.active > a, .navbar-mobile div.active > a {
+  color: #cc1616;
   padding: 10px 20px;
 }
 
@@ -409,9 +425,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 
+/*
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #cc1616; /* color of menu elements at lower levels */
+  color: #cc1616; ( color of menu elements at lower levels )
 }
+*/
 
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;

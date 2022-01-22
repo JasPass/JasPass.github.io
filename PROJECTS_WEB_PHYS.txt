@@ -1,0 +1,58 @@
+
+
+
+
+---------------------------- PROJECTS WEBSITE / MISC. PHYSICS ----------------------------
+
+    
+	
+	0. Complete the website skeleton                                                    []
+	
+	    - Completion deadline: [Jan 31]
+
+        - TODO:
+
+            -- Mobile: set menu item to blue when list is active                       (x)
+
+            -- Mobile: set menu item to red when at section on page                    (x)
+
+            -- Mobile: implement fixed nav-bar in all sub-pages                         ()
+
+            -- Make header of pages into include file                                   ()
+
+            -- Make footer of pages into include file                                   ()
+
+            -- Make Mathematics page                                                    ()
+	    
+	    
+	
+	1. Chaotic Pendulum 								                                []
+	
+	2. Mandelbrot Set 								                                    []
+	
+	3. Coupling-Coefficients 							                                []
+	
+	4. Calculus of Variations 							                                []
+	
+	5. Wave Function Evolution 							                                []
+	
+	6. Hadron Masses 								                                    []
+	
+	7. Many-Body Simulation 							                                []
+	
+	8. Morris-Thorne Whormhole							                                []
+	
+	9. Newtons Fractal 								                                    []
+	
+	10. Spin-Lattice Simulation 						                                []
+	
+	11. Notes on QFT 								                                    []
+	        
+	12. Geometric Quantization 							                                []
+	
+	
+
+---------------------------- PROJECTS WEBSITE / MISC. PHYSICS ----------------------------
+
+
+

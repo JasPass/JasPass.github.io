@@ -48,15 +48,30 @@
    */
   let navbarlinks = select('#navbar .scrollto', true)
   const navbarlinksActive = () => {
-    let position = window.scrollY + 200
+    let positionUpper = window.scrollY + 200
+    let positionLower = window.scrollY + 200
+
     navbarlinks.forEach(navbarlink => {
+    
       if (!navbarlink.hash) return
       let section = select(navbarlink.hash)
       if (!section) return
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        navbarlink.classList.add('active')
+ 
+      if (navbarlink.classList.contains('last-scrollto-upper')) {
+        positionUpper = positionUpper + 300 
+      }
+      if (navbarlink.classList.contains('last-scrollto-lower')) {
+        positionLower = positionLower + 300 
+      }
+
+      if (positionLower >= section.offsetTop && positionUpper <= (section.offsetTop + section.offsetHeight)) {
+        
+        navbarlink.parentElement.classList.add('active')
+
       } else {
-        navbarlink.classList.remove('active')
+
+        navbarlink.parentElement.classList.remove('active')
+
       }
     })
   }
@@ -133,6 +148,7 @@
         for (var i = 0; i < subs.length; i++) {
           
           subs.item(i).parentElement.nextElementSibling.classList.remove('dropdown-active')
+          subs.item(i).previousElementSibling.classList.remove('link-active')
           
         }
     
@@ -145,10 +161,11 @@
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
       
-      if (this.classList.contains("sub-unfold")) {
-        
+      if (this.classList.contains("unfold")) {
+
         this.parentElement.nextElementSibling.classList.toggle('dropdown-active')
-        
+        this.previousElementSibling.classList.toggle('link-active')
+
         var subs = document.getElementsByClassName("sub-unfold");
         
         for (var i = 0; i < subs.length; i++) {
@@ -156,6 +173,7 @@
           if (subs.item(i) != this) {
           
             subs.item(i).parentElement.nextElementSibling.classList.remove('dropdown-active')
+            subs.item(i).previousElementSibling.classList.remove('link-active')
           
           }
           
@@ -164,6 +182,7 @@
       } else {
         
         this.parentElement.nextElementSibling.classList.toggle('dropdown-active')
+        this.previousElementSibling.classList.toggle('link-active')
         
       }
       
