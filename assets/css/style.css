@@ -394,7 +394,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-mobile .active, .navbar-mobile li.active > a, .navbar-mobile div.active > a {
   color: #cc1616;
-  padding: 10px 20px;
+  padding: 5px 20px;
 }
 
 .navbar-mobile .getstarted {
