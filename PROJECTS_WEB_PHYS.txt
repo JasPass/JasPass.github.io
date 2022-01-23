@@ -25,6 +25,10 @@
             -- Make footer of pages into include file                                  (x)
 
             -- Make Mathematics page                                                    ()
+
+            -- Make Computer Science page                                               ()
+ 
+            -- Make Other Documents page                                                ()
 	    
 	    
 	
