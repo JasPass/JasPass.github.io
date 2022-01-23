@@ -102,7 +102,7 @@
   let selectHeader = select('#header')
   if (selectHeader) {
     let headerOffset = selectHeader.offsetTop
-    let nextElement = selectHeader.nextElementSibling
+    let nextElement = selectHeader.parentElement.nextElementSibling
     const headerFixed = () => {
       if ((headerOffset - window.scrollY) <= 0) {
         selectHeader.classList.add('fixed-top')
@@ -140,6 +140,7 @@
     console.log('Mobile nav-bar working!')
     
     select('#navbar').classList.toggle('navbar-mobile')
+
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
     
@@ -193,17 +194,19 @@
    * Scrool with ofset on links with a class name .scrollto
    */
   on('click', '.scrollto', function(e) {
-    if (select(this.hash)) {
-      e.preventDefault()
+    if (this.hash) {
+      if (select(this.hash)) {
+        e.preventDefault()
 
-      let navbar = select('#navbar')
-      if (navbar.classList.contains('navbar-mobile')) {
-        navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
+        let navbar = select('#navbar')
+        if (navbar.classList.contains('navbar-mobile')) {
+          navbar.classList.remove('navbar-mobile')
+          let navbarToggle = select('.mobile-nav-toggle')
+          navbarToggle.classList.toggle('bi-list')
+          navbarToggle.classList.toggle('bi-x')
+        }
+        scrollto(this.hash)
       }
-      scrollto(this.hash)
     }
   }, true)
 

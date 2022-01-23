@@ -16,11 +16,13 @@
 
             -- Mobile: set menu item to red when at section on page                    (x)
 
+            -- Finalize the fixed navbar implementation                                (x)
+
             -- Mobile: implement fixed nav-bar in all sub-pages                         ()
 
-            -- Make header of pages into include file                                   ()
+            -- Make header of pages into include file                                  (x)
 
-            -- Make footer of pages into include file                                   ()
+            -- Make footer of pages into include file                                  (x)
 
             -- Make Mathematics page                                                    ()
 	    
