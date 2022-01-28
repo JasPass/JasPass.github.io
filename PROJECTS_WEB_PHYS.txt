@@ -2,7 +2,7 @@
 
 
 
----------------------------- PROJECTS WEBSITE / MISC. PHYSICS ----------------------------
+---------------------------- PROJECTS WEBSITE / MISC. SCIENCE ----------------------------
 
     
 	
@@ -18,7 +18,7 @@
 
             -- Finalize the fixed navbar implementation                                (x)
 
-            -- Mobile: implement fixed nav-bar in all sub-pages                         ()
+            -- Mobile: implement fixed nav-bar in all sub-pages                        (x)
 
             -- Make header of pages into include file                                  (x)
 
