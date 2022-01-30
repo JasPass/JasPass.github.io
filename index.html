@@ -933,7 +933,11 @@ level...
   <!-- Navbar include -->
   <script>
       
-    $("#includeTop").load("top.html", function(data) {});
+    $("#includeTop").load("top.html", function(data) {
+
+      document.getElementById("hero-link").parentElement.classList.add('active')
+
+    });
     $("#includeBottom").load("bottom.html", function(data) {});
     
   </script>
