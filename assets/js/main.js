@@ -275,19 +275,22 @@
   /**
    * Portfolio details slider
    */
-  new Swiper('.portfolio-details-slider', {
-    speed: 500,
-    loop: true,
-    autoplay: {
-      delay: 10000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+  
+  if (document.getElementsByClassName("swiper-notification").length != 1) {
+    new Swiper('.portfolio-details-slider', {
+      speed: 500,
+      loop: true,
+      autoplay: {
+        delay: 10000,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      }
+    });
+  }
 
   /**
    * Animation on scroll

@@ -24,12 +24,17 @@
 
             -- Make footer of pages into include file                                  (x)
 
-            -- Make Mathematics page                                                    ()
+            -- Make Mathematics page                                                   (x)
 
-            -- Make Computer Science page                                               ()
+            -- Make Computer Science page                                              (x)
  
-            -- Make Other Documents page                                                ()
-	    
+            -- Make Other Documents page                                               (x)
+
+            -- Make Bachelor Thesis page                                               (x)
+
+            -- Make Master Thesis page                                                 (x)
+
+            -- Make Certificates and CV page                                           (x)	    
 	    
 	
 	1. Chaotic Pendulum 								                                []
@@ -58,7 +63,7 @@
 	
 	
 
----------------------------- PROJECTS WEBSITE / MISC. PHYSICS ----------------------------
+---------------------------- PROJECTS WEBSITE / MISC. SCIENCE ----------------------------
 
 
 

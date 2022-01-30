@@ -71,7 +71,70 @@
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
 
-          
+          <div class="row gy-4">
+
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper-container">
+                <div class="swiper-wrapper align-items-center">
+
+                  <div class="swiper-slide">
+                    <img src="BP/img/Kruskal_Schwarz.png" alt="">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="BP/img/Rindler_space.png" alt="">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="BP/img/SW.png" alt="">
+                  </div>
+                
+                  <div class="swiper-slide">
+                    <img src="BP/img/Kruskal_static.png" alt="">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="BP/img/BTZ_Static.png" alt="">
+                  </div>
+
+                </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Thesis work</li>
+                <li><strong>Academic level</strong>: Bachelor</li>
+                <li><strong>Field</strong>: Semi-classical quantum gravity</li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Black holes in (3+1) dimensions</h2>
+              <p>
+              Since Einstein proposed his theory of general relativity in 1915 physicists have searched for black
+hole solutions of all kinds. In 1992, Máximo Bañados, Claudio Teitelboim, and Jorge Zanelli
+discovered one such solution in a (2+1) dimensional spacetime with negative curvature called
+the BTZ Black Hole. In this thesis we construct the BTZ Black Hole from AdS 3 and analyse
+its properties.
+              </p>
+            </div>
+            <div class="portfolio-info">
+              <h3>Project files</h3>
+              <ul>
+                </li>
+                <li>
+                  <span class="iconify" data-icon="ant-design:file-pdf-filled"></span>
+                  <a href="BP/docs/Analysis_of_the_BTZ_Black_Hole.pdf" target="_blank">Analysis_of_the_BTZ_Black_Hole.pdf</a>             
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
 
       </div>
     </section><!-- End Portfolio Details Section -->
@@ -118,7 +181,7 @@
       });
     
       var scripts = $(data).find("script");
-
+     
       if (scripts.length) {
       
         $(scripts).each(function() {
