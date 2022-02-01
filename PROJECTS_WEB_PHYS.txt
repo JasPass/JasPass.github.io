@@ -6,7 +6,7 @@
 
     
 	
-	0. Complete the website skeleton                                                    []
+	0. Complete the website skeleton                                                   [x]
 	
 	    - Completion deadline: [Jan 31]
 
