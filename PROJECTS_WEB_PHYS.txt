@@ -8,7 +8,7 @@
 	
 	0. Complete the website skeleton                                                   [x]
 	
-	    - Completion deadline: [Jan 31]
+	    - Completion deadline: [Jan 31 2022]
 
         - TODO:
 
@@ -37,13 +37,26 @@
             -- Make Certificates and CV page                                           (x)	    
 	    
 	
-	1. Chaotic Pendulum 								                                []
+    
+    1. Calculus of Variations: Chatper 1 Part 1 							            []
+
+        - Completion deadline: [Feb 28 2022]
+
+        - TODO:
+
+            -- Proof read the note                                                      ()
+
+
+
+    2. EM Waves in Long Circuits                                                        []
+
+
+
+	3. Chaotic Pendulum 								                                []
 	
 	2. Mandelbrot Set 								                                    []
 	
 	3. Coupling-Coefficients 							                                []
-	
-	4. Calculus of Variations 							                                []
 	
 	5. Wave Function Evolution 							                                []
 	
