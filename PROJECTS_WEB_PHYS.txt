@@ -6,7 +6,7 @@
 
     
 	
-	0. Complete the website skeleton                                                   [x]
+	0. Complete the website skeleton                                               [x]
 	
 	    - Completion deadline: [Jan 31 2022]
 
@@ -38,13 +38,13 @@
 	    
 	
     
-    1. Calculus of Variations: Chatper 1 Part 1 							            []
+    1. Calculus of Variations: Chatper 1 Part 1					       [x]
 
         - Completion deadline: [Feb 28 2022]
 
         - TODO:
 
-            -- Proof read the note                                                      ()
+            -- Proof read the note                                                     (x)
 
 
 
@@ -52,27 +52,27 @@
 
 
 
-	3. Chaotic Pendulum 								                                []
+	3. Chaotic Pendulum 								[]
 	
-	2. Mandelbrot Set 								                                    []
+	2. Mandelbrot Set 								[]
 	
-	3. Coupling-Coefficients 							                                []
+	3. Coupling-Coefficients 							[]
 	
-	5. Wave Function Evolution 							                                []
+	5. Wave Function Evolution 							[]
 	
-	6. Hadron Masses 								                                    []
+	6. Hadron Masses 								[]
 	
-	7. Many-Body Simulation 							                                []
+	7. Many-Body Simulation 							[]
 	
-	8. Morris-Thorne Whormhole							                                []
+	8. Morris-Thorne Whormhole							[]
 	
-	9. Newtons Fractal 								                                    []
+	9. Newtons Fractal 								[]
 	
-	10. Spin-Lattice Simulation 						                                []
+	10. Spin-Lattice Simulation 						        []
 	
-	11. Notes on QFT 								                                    []
+	11. Notes on QFT 								[]
 	        
-	12. Geometric Quantization 							                                []
+	12. Geometric Quantization 							[]
 	
 	
 
