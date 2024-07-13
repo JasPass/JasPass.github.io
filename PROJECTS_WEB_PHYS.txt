@@ -48,11 +48,13 @@
 
 
 
+    3. Chaotic Pendulum 								                               [x]
+
+
+
     2. EM Waves in Long Circuits                                                        []
 
 
-
-	3. Chaotic Pendulum 								                                []
 	
 	2. Mandelbrot Set 								                                    []
 	
