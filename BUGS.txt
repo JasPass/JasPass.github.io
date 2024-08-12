@@ -1,0 +1,18 @@
+
+
+
+---------------------------------------- KNOWN BUGS AND ISSUES ----------------------------------------
+
+
+
+    - NAVIGATION: when not on homepage, the first 5 nav bar links does not place user at the correct
+                  location on home page
+
+    - NAVIGATION: the nav bar link (contact) never becomes hilighted (with red box)
+
+
+
+---------------------------------------- KNOWN BUGS AND ISSUES ----------------------------------------
+
+
+
