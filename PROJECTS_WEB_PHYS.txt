@@ -2,83 +2,83 @@
 
 
 
----------------------------- PROJECTS WEBSITE / MISC. SCIENCE ----------------------------
+-------------------------- PROJECTS WEBSITE / MISC. SCIENCE --------------------------
 
     
 	
-	0. Complete the website skeleton                                                   [x]
+	0. Complete the website skeleton                                              [x]
 	
 	    - Completion deadline: [Jan 31 2022]
 
         - TODO:
 
-            -- Mobile: set menu item to blue when list is active                       (x)
+            -- Mobile: set menu item to blue when list is active                    (x)
 
-            -- Mobile: set menu item to red when at section on page                    (x)
+            -- Mobile: set menu item to red when at section on page                 (x)
 
-            -- Finalize the fixed navbar implementation                                (x)
+            -- Finalize the fixed navbar implementation                             (x)
 
-            -- Mobile: implement fixed nav-bar in all sub-pages                        (x)
+            -- Mobile: implement fixed nav-bar in all sub-pages                     (x)
 
-            -- Make header of pages into include file                                  (x)
+            -- Make header of pages into include file                               (x)
 
-            -- Make footer of pages into include file                                  (x)
+            -- Make footer of pages into include file                               (x)
 
-            -- Make Mathematics page                                                   (x)
+            -- Make Mathematics page                                                (x)
 
-            -- Make Computer Science page                                              (x)
+            -- Make Computer Science page                                           (x)
  
-            -- Make Other Documents page                                               (x)
+            -- Make Other Documents page                                            (x)
 
-            -- Make Bachelor Thesis page                                               (x)
+            -- Make Bachelor Thesis page                                            (x)
 
-            -- Make Master Thesis page                                                 (x)
+            -- Make Master Thesis page                                              (x)
 
-            -- Make Certificates and CV page                                           (x)	    
+            -- Make Certificates and CV page                                        (x)	    
 	    
 	
     
-    1. Calculus of Variations: Chatper 1 Part 1					                       [x]
+    1. Calculus of Variations: Chatper 1 Part 1					            [x]
 
         - Completion deadline: [Feb 28 2022]
 
         - TODO:
 
-            -- Proof read the note                                                     (x)
+            -- Proof read the note                                                  (x)
 
 
 
-    3. Chaotic Pendulum 								                               [x]
+    3. Chaotic Pendulum 								            [x]
 
 
 
-    2. EM Waves in Long Circuits                                                        []
+    2. EM Waves in Long Circuits                                                    []
 
 
 	
-	2. Mandelbrot Set 								                                    []
+	2. Mandelbrot Set 								            []
 	
-	3. Coupling-Coefficients 					                                		[]
+	3. Coupling-Coefficients 					                        []
 	
-	5. Wave Function Evolution 						                                	[]
+	5. Wave Function Evolution 						                  []
 	
-	6. Hadron Masses 								                                    []
+	6. Hadron Masses 								                  []
 	
-	7. Many-Body Simulation 						                                	[]
+	7. Many-Body Simulation 						                  []
 	
-	8. Morris-Thorne Whormhole						                                	[]
+	8. Morris-Thorne Whormhole						                  []
 	
-	9. Newtons Fractal 								                                    []
+	9. Newtons Fractal 								            []
 	
-	10. Spin-Lattice Simulation 					                        	        []
+	10. Spin-Lattice Simulation 					                        []
 	
-	11. Notes on QFT 							                                    	[]
+	11. Notes on QFT 							                        []
 	        
-	12. Geometric Quantization 						                                	[]
+	12. Geometric Quantization 						                  []
 	
 	
 
----------------------------- PROJECTS WEBSITE / MISC. SCIENCE ----------------------------
+-------------------------- PROJECTS WEBSITE / MISC. SCIENCE --------------------------
 
 
 
